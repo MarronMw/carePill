@@ -11,8 +11,8 @@ function HomeScreen(props) {
   const leadingWords = "your health is your wealth";
   return (
     <Screen style={styles.container}>
-      {/* <AppButton title={"Today, 20th"} style={styles.btn} isClickable={false} />
-      <AppText title={leadingWords} titleStyles={styles.leading} /> */}
+      <AppButton title={"Today, 20th"} style={styles.btn} isClickable={false} />
+      <AppText title={leadingWords} titleStyles={styles.leading} />
       <WeekDay />
     </Screen>
   );
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     backgroundColor: colors.screenBg,
+    gap: 20,
   },
   leading: {
     fontSize: 35,
